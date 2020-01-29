@@ -1,0 +1,308 @@
+\documentclass[a4paper,11pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.50in, right=0.85in]{geometry}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{comment}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.65}
+\textheight=10in
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+\pagestyle{empty}
+
+\usepackage{makecell}
+\usepackage{setspace}
+
+%\usepackage{mathptmx}
+%\usepackage[11pt]{moresize}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+
+%\begin{comment}
+\indent {\textbf{\Large  Sushmita Bhattacharya}}\hfill https://sushmitab.github.io/\\
+\indent {Graduate Research Assistant}\hfill sbhatt55@asu.edu\\
+\indent {Arizona State University}
+\setlength{\tabcolsep}{5pt}
+
+\vspace{10pt}
+
+\resheading{\textbf{\large Education} }\\[\lsep]
+\begin{description}
+\item 
+\begin{itemize}
+	
+\item \textbf{Arizona State University}\hfill Tempe, AZ, USA\\
+	Ph.D. in Computer Science\hfill \textit{August 2018 - present}\\
+	Advisor: Dr. Stephanie Gil
+\end{itemize}
+\item
+\begin{itemize}
+\item \textbf{Indian Institute of Technology Bombay}\hfill Mumbai, India\\
+	M.Tech. in Computer Science\hfill \textit{Fall 2013-Spring 2015}\\
+	Advisor: Dr. N. L. Sarda
+\end{itemize}
+\item
+\begin{itemize}
+\item \textbf{Indian Institute of Engineering Science and Technology Shibpur}\hfill Howrah, India\\
+	B.E. in Computer Science\hfill \textit{Fall 2007-Spring 2011}\\
+	Advisor: Dr. Prasun Ghosal.
+\end{itemize}
+\end{description}
+
+\resheading{\textbf{\large Research Interests}}
+\begin{description}
+	\item \hspace{0.75 cm} I am interested in the domain of Reinforcement learning, Robotics, multi-agent systems, Machine learning, Deep learning.
+\end{description}
+
+
+%\hspace{0.5cm}
+\resheading{\textbf{\large Professional Experience}}\\[\lsep]
+\begin{description}
+	\item 
+	\begin{itemize}
+		\item Worked as a Developer in Microsoft India Development Center. \hfill \textit{December 2016 - July 2018}
+	\end{itemize}
+\item 
+\begin{itemize}
+		\item Worked as a Data Scientist in Honeywell Technology Solution Labs. \hfill \textit{July 2015 - December 2016}
+	\end{itemize}
+	\item 
+	\begin{itemize}
+		\item Worked as a developer in Cognizant Technology Solutions \hfill \textit{June 2011 - June 2013}
+	\end{itemize}
+\end{description}
+
+\resheading{\textbf{\large Research Project}}
+\begin{description}
+	
+	\item 
+	\begin{itemize}
+		\item I am working on Reinforcement Learning for Partially Observable Markov Decision Processes. Our group is looking for novel variants of approximate policy iteration with the application to autonomous sequential repair problem. 
+	\end{itemize}
+\item 
+\begin{itemize}
+	\item	We submitted our work "Reinforcement Learning for POMDP: Rollout and Policy Iteration with Application to Autonomous Sequential Repair Problems", \underline{Sushmita Bhattacharya}, Thomas Wheeler, Stephanie Gil, and Dimitri Bertsekas, in IEEE Robotics and Automation Letters (RA-L), 2020
+	\end{itemize}
+\end{description}
+
+\resheading{\textbf{\large M. Tech. Project \& Seminar} }\\[\lsep]
+\begin{description}
+\item
+\begin{itemize}
+
+\item \textbf{Big Data Analytics in a Distributed Database Environment }\hfill \textit{(July 2014 - present)}\\
+\textit{(Guide: Prof. N. L. Sarda)}
+      \begin{itemize}
+	  \item \textbf{Objective: }\textit{ATM Fraud Detection}
+	  \item \textbf{Approach: }Storing large amount of transaction data in a reliable store. Detecting outliers using data mining techniques on historical data. Update of store after outliers detection.
+	  \item \textbf{Current Work: }Exploring various tools and techniques for storing and processing big data and methods of data mining. Experimenting with relative performance of traditional RDBMS and Hadoop system (HDFS, HBase, Pig etc).
+	    
+ \end{itemize}
+ \end{itemize}
+\item
+\begin{itemize}
+\item \textbf{Streaming Data Processing and Management}\hfill \textit{(Jan 2014 - May 2014)}\\
+\textit{(Guide: Prof. N. L. Sarda)}
+      \begin{itemize}
+	    \item Studied streaming data and its difference from traditional relational data and processing.
+	    \item Surveyed stream query language and special purpose storage and indexing for streams.
+	    \item Reviewed STREAM - a Stanford implementation for stream data management system.
+      \end{itemize}
+\end{itemize}
+
+\end{description}
+
+
+\resheading{\textbf{\large Course Projects } }
+\begin{description}
+\item
+\begin{itemize}
+\item \textbf{Implementation of Table Partitioning in PostgreSQL}\hfill \textit{(Autumn, 2013)}\\
+\textit{(Guide: Prof. S. Sudarshan in Implementation Techniques for Relational Database Systems)} \hfill 
+\begin{itemize}
+  \item Modified source code of PostgreSQL to gain table (range) partitioning functionality
+  \item Changed code for insert, delete and update of tuples to take place in proper partition.
+  \item Added code for creating index(s) in the partitioned tables if one is present in main table.
+\end{itemize}
+\end{itemize}
+
+\item 
+\begin{itemize}
+\item \textbf{Color and Size Based Fruit Sorter using FireBird V}\hfill \textit{(Autumn, 2013)}\\
+\textit{(Guide: Prof. Kavi Arya and Prof. Krithi Ramamritham in Embedded and Real Time Systems)}
+\begin{itemize}
+\item Built modular hardware and software components for feature based, real time fruit sorter.
+\item Coded various sensors and actuators in Firebird V. Written code for serial communication between Firebird V and PC.
+\item Designed and performed experiments with various test-sets and got \textbf{90\% accuracy}. 
+\end{itemize}
+\end{itemize}
+
+
+\item 
+
+\begin{itemize}
+\item \textbf{Part of Speech Tagging} \hfill \textit{(Autumn, 2013)}\\
+\textit{(Guide: Prof. Pushpak Bhattacharya in Natural Language Processing)}
+\begin{itemize}
+\item Developed a part of speech tagging system for English sentences in \textbf{Java}, with an average precision of 93\%.
+\item Implemented using \textbf{Hidden Markov Model} and \textbf{Viterbi algorithm}.
+\end{itemize}
+\end{itemize}
+\item 
+
+
+\begin{itemize}
+\item \textbf{Understanding and Simulation of Network Performance in Dense Wifi Settings} \hfill \textit{(Spring, 2014)}\\
+\textit{(Guide: Prof. Mythili Vutukuru in Mobile Computing)} 
+\begin{itemize}
+\item Analyzed various statistics and parameters from network trace files in a wireless setup using \textbf{Python}.
+\item Simulated the same experiment using \textbf{NS3} simulation tool and tuned various network parameters to reflect the real experiment.
+%did a comparative study with the original experiment.
+\end{itemize}
+\end{itemize}
+\item
+
+\begin{itemize}
+\item \textbf{Geometry Generalization for Map Simplification} \hfill \textit{(Spring, 2014)}\\
+\textit{(Guide: Prof. N. L. Sarda in Spatial Database)} 
+\begin{itemize}
+\item Performed simplification of the linear geometries without affecting the topology of geometries using modified Ramer-Douglas-Peucker algorithm in \textbf{Java}.
+\item Achieved runtime of 300 ms to simplify a set of linestrings with 900 data points.
+\end{itemize}
+\end{itemize}
+
+\item
+
+\begin{itemize}
+\item \textbf{Exploited Vulnerabilities of Webview in Android} \hfill \textit{(Spring, 2014)}\\
+\textit{(Guide: Prof. Bernard Menezes in Cryptography and Network Security II)} 
+\begin{itemize}
+\item Designed attacks on Android Webview and analyzed methods to stop those attacks.
+\item Exploited vulnerabilities in calling Java code from Javascript and user interface through the developed Android Apps.
+\end{itemize}
+\end{itemize}
+
+
+\end{description}
+
+
+
+
+
+\resheading{\textbf{\large Teaching Assistantship}}
+\begin{description}
+\item
+\begin{itemize}
+	\item CSE 691-Topics in Reinforcement Learning (Instructor: Dr. D. P. Bertsekas)\hfill\textit{ASU Spring 2020}
+\end{itemize}
+\item 
+\begin{itemize}
+	\item CSE 591-Coordination of Multi-Robot Systems (Instructor: Dr. S Gil)\hfill  \textit{ASU Spring 2019}
+\end{itemize}
+\item 
+\begin{itemize}
+	\item CSE 691-Topics in Reinforcement Learning (Instructor: Dr. D. P. Bertsekas)\hfill  \textit{ASU Spring 2019}
+\end{itemize}
+\item 
+\begin{itemize}
+	\item CSE 471-Introduction to Artificial Intelligence (Instructor: Dr. S Gil)\hfill  \textit{ASU Spring 2019}
+\end{itemize}
+\item 
+\begin{itemize}
+	\item CSE 574-Planning and Learning Methods in AI (Instructor: Dr. S Gil) \hfill \textit{ASU Fall 2018}
+\end{itemize}
+\item 
+\begin{itemize}
+	\item CS 308 - Embedded Systems Lab (Instructor: Dr. Kavi Arya) \hfill \textit{IITB Spring, 2014}
+\end{itemize}
+\item 
+\begin{itemize}
+     \item CS 387 - Database and Information Systems Lab(Instructor: Dr. N. L. Sarda) \hfill \textit{IITB Autumn 2014}
+\end{itemize}
+%Helped in data preparation work for project.	    
+%\begin{itemize}
+% 	\item Machine Learning lab\hfill \textit{(Autumn, 2013)}	    
+ %    \end{itemize}
+%\end{itemize}
+\end{description}
+
+
+%\resheading{\textbf{\large Courses Taken}}
+%\begin{description}
+%\item \hspace{0.75 cm} Implementation Techniques for Relational Database Systems, Spatial Databases, Natural Language Processing, Embedded Systems, Network Security Cryptography II, Mobile Computing
+%\end{description}
+
+
+\resheading{\textbf{\large Skill Set}}\\
+
+\begin{tabular}{ll}
+	
+	\begin{minipage}{2in}
+		\begin{itemize}
+			\item \textit{Programming Languages:}
+		\end{itemize}
+	\end{minipage}  & C, C++, Core Java, PL/SQL \\
+	
+	\begin{minipage}{2in}
+		
+		\begin{itemize}
+			\item \textit{Scripting Languages:}
+		\end{itemize}
+	\end{minipage}  & Python, Bash\\
+	
+	\begin{minipage}{2in}
+		
+		\begin{itemize}
+			\item \textit{Operating Systems:}
+		\end{itemize}
+	\end{minipage}  & Linux, Windows \\
+	
+	
+	\begin{minipage}{2in}
+		\begin{itemize}
+			\item \textit{Tools:}
+		\end{itemize}  
+	\end{minipage}  & \LaTeX, SVN, Eclipse, Lex, Yacc, Android SDK, Make, NS3, Gnuplot \\
+	
+\end{tabular}
+\\[0.3cm]
+
+
+\resheading{\textbf{\large Achievements \& Extra Curricular Activities }}
+
+\begin{description}
+\item
+\begin{itemize}
+\item Secured \textbf{57} rank in \textbf{GATE CS-2013} amongst 2,24,160 candidates.
+\item Interests: painting, music.
+\end{itemize}
+\end{description}
+
+
+
+
+\end{document}
