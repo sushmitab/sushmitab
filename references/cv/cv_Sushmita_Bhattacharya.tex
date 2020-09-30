@@ -1,0 +1,221 @@
+\documentclass[a4paper,11pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.50in, right=0.85in]{geometry}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{comment}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.65}
+\textheight=10in
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+\pagestyle{empty}
+
+\usepackage{makecell}
+\usepackage{setspace}
+\usepackage{textcomp}
+%\usepackage{mathptmx}
+%\usepackage[11pt]{moresize}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+	\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+		\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+	\end{tabular*}\vspace{-8pt}}
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+	
+	%\begin{comment}
+	\indent {\textbf{\Large  Sushmita Bhattacharya}}\hfill https://sushmitab.github.io/\\
+	\indent {Ph.D. Student}\hfill sushmita\_bhattacharya@g.harvard.edu\\
+	\indent {Harvard University}
+	\setlength{\tabcolsep}{5pt}
+	
+	\vspace{10pt}
+	
+	\resheading{\textbf{\large Research Interests}}
+	\begin{description}
+		\item \hspace{0.75 cm} Reinforcement learning, Multiagent systems, Robotics, Machine learning, Deep learning.
+	\end{description}
+	
+	\resheading{\textbf{\large Education} }\\[\lsep]
+	\begin{description}
+		\item 
+		\begin{itemize}
+			\item \textbf{Harvard  University}\hfill Cambridge, MA, USA\\
+			Ph.D. in Computer Science\hfill \textit{July 2020 - Present}\\
+			Advisor: Dr. Stephanie Gil
+		\end{itemize}
+		\item
+		\begin{itemize}
+			\item \textbf{Arizona State University}\hfill Tempe, AZ, USA\\
+			Ph.D. in Computer Science\hfill \textit{August 2018 - June 2020}\\
+			Advisor: Dr. Stephanie Gil
+		\end{itemize}
+		\item
+		\begin{itemize}
+			\item \textbf{Indian Institute of Technology Bombay}\hfill Mumbai, India\\
+			M.Tech. in Computer Science\hfill \textit{Fall 2013-Spring 2015}\\
+			Advisor: Dr. N. L. Sarda
+		\end{itemize}
+		\item
+		\begin{itemize}
+			\item \textbf{Indian Institute of Engineering Science and Technology Shibpur}\hfill Howrah, India\\
+			B.E. in Computer Science\hfill \textit{Fall 2007-Spring 2011}\\
+			Advisor: Dr. Prasun Ghosal.
+		\end{itemize}
+	\end{description}
+	
+	
+	
+	
+	%\hspace{0.5cm}
+	\resheading{\textbf{\large Publication}}
+	\begin{description}
+		\item \hspace{0.65 cm} \textit{Reinforcement Learning for POMDP: Rollout and Policy Iteration with Application to Autonomous Sequential Repair Problems}, \textbf{Sushmita Bhattacharya}, Thomas Wheeler, Stephanie Gil, and Dimitri Bertsekas, in IEEE Robotics and Automation Letters (RA-L), 2020 (10.1109/LRA.2020.2978451).
+	\end{description}
+	
+	
+	
+	\resheading{\textbf{\large Research Project}}
+	\begin{description}
+		\item 
+		\begin{itemize}
+			\item\textbf{Reinforcement learning for POMDP}
+			\item Developed online rollout algorithms for large scale Partially Observable Markov Decision Process with huge state-space. Improved cost of the rollout policy using approximate policy iteration where successive policies were approximated using neural networks.
+			\item Developed partitioned state-space and used multiple neural networks to deal with exploration-exploitation issues and facilitate parallel computation.
+			\item Applied the algorithms to a class of time-critical dynamical sequential repair problems, and results outperformed some state-of-art methods.
+			
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item\textbf{Multiagent reinforcement learning for POMDP}\hfill \textit{Ongoing work}
+			\item Deloveped scalable multiagent rollout algorithms for large scale POMDP problems with huge state space and huge control space. Demonstrated cost improvement property using approximate policy iteration with the scalable algorithm.
+			\item The proposed algorithm reduced computations from an exponential (w.r.t number of agents) to a linear complexity and demonstrated coordinated behavior, making it suitable for POMDP applications with large teams of robots.
+			\item Applied the algorithms to a class of multiagent coordinated time-critical dynamical sequential repair problems, and results outperformed some state-of-art methods.
+			
+			
+		\end{itemize}
+	\end{description}
+	
+	
+	\resheading{\textbf{\large Work Experience}}\\[\lsep]
+	\begin{description}
+		\item 
+		\begin{itemize}
+			\item Research Assistant at Harvard University \hfill \textit{July 2020 - Present}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item Graduate Research and Teaching Assistant at Arizona State University \hfill \textit{August 2018 - June 2020}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item Software developer in Microsoft India Development Center. \hfill \textit{December 2016 - July 2018}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item Data Scientist in Honeywell Technology Solution Labs. \hfill \textit{July 2015 - December 2016}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item Teaching Assistant in Indian Institute of Technology Bombay \hfill \textit{July 2013 - June 2015}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item Developer in Cognizant Technology Solutions \hfill \textit{June 2011 - June 2013}
+		\end{itemize}
+	\end{description}
+	
+	\resheading{\textbf{\large Teaching Assistantship}}
+	\begin{description}
+		\item
+		\begin{itemize}
+			\item CSE 691-Topics in Reinforcement Learning (Instructor: Dr. D. P. Bertsekas)\hfill\textit{ASU Spring 2020}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CSE 591-Coordination of Multi-Robot Systems (Instructor: Dr. S Gil)\hfill  \textit{ASU Fall 2019}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CSE 691-Topics in Reinforcement Learning (Instructor: Dr. D. P. Bertsekas)\hfill  \textit{ASU Spring 2019}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CSE 471-Introduction to Artificial Intelligence (Instructor: Dr. S Gil)\hfill  \textit{ASU Spring 2019}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CSE 574-Planning and Learning Methods in AI (Instructor: Dr. S Gil) \hfill \textit{ASU Fall 2018}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CS 308 - Embedded Systems Lab (Instructor: Dr. Kavi Arya) \hfill \textit{IITB Spring, 2014}
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item CS 387 - Database and Information Systems Lab(Instructor: Dr. N. L. Sarda) \hfill \textit{IITB Autumn 2014}
+		\end{itemize}
+		
+	\end{description}
+	
+	\resheading{\textbf{\large M.Tech. Project} }\\[\lsep]
+	\begin{description}
+		\item \hspace{0.65 cm} \textbf{Big Data Analysis in distributed streaming database}
+		\hfill\textit{(Guide: Prof. N. L. Sarda)}
+		\begin{itemize}
+			\item Developed application for studying customer spending habits using regression analysis with offline Hadoop map reduce jobs and storing the results in a reliable HBase key-value store to facilitate online detection of anomalous transactions using data mining techniques with Apache Storm. 
+			
+			
+		\end{itemize}
+		
+	\end{description}
+	
+	
+	\resheading{\textbf{\large Awards}}
+	\begin{description}
+		\item \hspace{0.65 cm} Engineering Graduate Fellowship from Ira A. Fulton Schools of Engineering (Spring 2020) for extraordinary academic achievements.
+		
+	\end{description}
+	
+	\resheading{\textbf{\large Achievements \& Extra Curricular Activities }}
+	
+	\begin{description}
+		\item
+		\begin{itemize}
+			\item Secured All India Rank 57 among 2,24,160 candidates appeared in Graduate Aptitude Test in Engineering, 2013 CSE.
+		\end{itemize}
+		\item
+		\begin{itemize}
+			\item Interests: painting, music.
+		\end{itemize}
+	\end{description}
+	
+	
+%	\resheading{\textbf{\large References}}
+%	\begin{description}
+%		\item \hspace{0.75 cm}\textbf{Dr. Stephanie Gil}\\School of Engineering and Applied Sciences (CS)\\Harvard University\\Email: sgil@seas.harvard.edu
+%		\item \hspace{0.75 cm}\textbf{Dr. Dimitri P. Bertsekas}\\McAfee Professor of Engineering\\Massachusetts Institute of Technology,\\Fulton Professor of Computational Decision Making\\Arizona State University\\Email: dimitrib@mit.edu
+%	\end{description}
+	
+	
+	
+\end{document}
