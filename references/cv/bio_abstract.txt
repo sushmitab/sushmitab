@@ -1,0 +1,9 @@
+
+
+Bio: Sushmita Bhattacharya is a Ph.D. candidate in the Computer Science Department of the School of Engineering and Applied Sciences at Harvard University, where she is a member of the REACT lab (https://react.seas.harvard.edu). Her research focuses on designing multi-agent reinforcement learning algorithms to solve real-world sequential decision-making problems. She has published papers in top-tier conferences, including ICRA and CoRL, and journals RA-L and T-RO in the field of Reinforcement Learning and Robotics. She is a recipient of the 2022 Apple Scholars in AI/ML PhD fellowship in Fundamentals of Machine Learning and has received the Engineering Graduate Fellowship from Ira A. Fulton Schools of Engineering for extraordinary academic achievements.
+
+Talk title: Sequential Decision-Making under Uncertainties for Real-World Problems
+
+Abstract: Autonomous decision-making is ubiquitous in cyber-physical systems, facilitating artificial intelligence for large-scale problems where an optimal solution is intractable. My research focuses on designing cost-effective multi-agent approximate algorithms with underlying theoretical foundations for sequential decision-making problems. I study Reinforcement Learning-based solutions that work efficaciously under realistic computation and communication constraints, with partial observations of uncertain and dynamic environments. In this talk, I will also go over my work on applications, including city-scale taxicab pickup schedules with dynamic demand models and autonomous routing in the wild for marine life observation. 
+
+
